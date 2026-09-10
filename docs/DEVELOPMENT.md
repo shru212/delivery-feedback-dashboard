@@ -1,38 +1,4 @@
-# Delivery Feedback Dashboard
-
-Private delivery management dashboard for Outside (KAN), Autopsy (AUT), and Share My Bread (SMB).
-
-[Open the private dashboard](https://delivery-feedback-shru212.shru212.chatgpt.site/)
-
-## Design documents
-
-- [Low Level Design document](docs/Delivery-Feedback-LLD.docx)
-- [Architecture diagram](docs/architecture.png)
-- [Architecture and implementation notes](ARCHITECTURE.md)
-- [Security notes](SECURITY.md)
-
-![Handwritten architecture diagram](docs/architecture.png)
-
-## Included functionality
-
-- SteerCo infographic agenda and snapshot-matched PowerPoint download
-- Business delivery health, risks, pending decisions and tradeoffs
-- PDLC roadmap view and separate illustrative milestones
-- Agent aliases and reporting schedule preferences
-- Authenticated settings with server-side encrypted API credentials
-- LangChain orchestration, D1 snapshots and Mem0/Pinecone integration code
-
-## Operational status
-
-This source corresponds to Site version 3, published from source commit `ff4e6ac98d096ca8a28ec52dbe2e1746731ff9e5`. This GitHub copy adds these documentation links and the completed LLD; its Git history is separate from the Sites source repository.
-
-Unattended reporting remains paused pending supported owner-authorized machine authentication and end-to-end verification. Mem0 is part of the requested target architecture; the current implementation gates it on consent and credentials and continues Jira reporting if memory is unavailable. Jira timeline writeback is not implemented. Publishing a new version does not perform a fresh Jira sync.
-
-This private repository contains dated Jira snapshots and an embedded report. Do not make it public without removing private data and reviewing history. Actual API keys, `.dev.vars`, `.env`, local databases, runtime directories, and dependencies are excluded. `.env.example` contains empty placeholders only.
-
-GitHub uploads do not automatically deploy the Site. Deployment retains the existing private Sites access controls.
-
-## Development reference
+# vinext-starter
 
 A clean full-stack starter running on [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and Drizzle support.
 
